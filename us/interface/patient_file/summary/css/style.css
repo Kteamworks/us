@@ -1,0 +1,183 @@
+body {
+  background: #ccc;
+  font: 87.5%/1.5em 'Lato', sans-serif;
+  margin: 0;
+}
+
+.calendar-container table {
+  border-collapse: collapse;
+  border-spacing: 0;
+      font-family: lato;
+}
+
+.calendar-container td {
+  padding: 0;
+}
+.auo-mar {
+clear: both;
+padding-top: 17px;
+}
+.pdata p {
+display: inline;
+}
+.doc-head {
+font-family:Georgia,serif;
+ color:#fff;
+ font-variant: small-caps; text-transform: none; font-weight: 100; margin-bottom: 0;
+}
+
+.modal-header {
+background-color: #0480be;
+color: #fff;
+}
+.modal-header .close {
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.modal-body.clearfix {
+	padding: 0px;
+}
+
+.cal-container {
+-webkit-transform:scale(0.5);
+-moz-transform:scale(0.5);
+-ms-transform:scale(0.5);
+transform:scale(0.5);
+    position: absolute;
+    top: -50px;
+    height: 0px;
+    right: 0px;
+}
+
+.calendar-container {
+  position: relative;
+}
+
+.calendar-container header {
+  border-radius: 1em 1em 0 0;
+  background: #e66b6b;
+  color: #fff;
+  padding: 3em 2em;
+}
+
+.day {
+  font-size: 5em;
+
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.month {
+  font-size: 2em;
+  line-height: 1em;
+  text-transform: lowercase;
+}
+
+.calendar-inner {
+  background: #fff;
+  border-radius: 0 0 1em 1em;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 3px 1px #fff;
+  color: #555;
+  display: inline-block;
+  padding: 2em;
+}
+
+.calendar-inner thead {
+  color: #e66b6b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.calendar-inner td {
+  padding: .5em 1em;
+  text-align: center;
+      font-size: 24px;
+}
+
+.calendar-inner tbody td:hover {
+  background: #cacaca;
+  color: #fff;
+}
+
+.current-day {
+
+      display: block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+
+    -moz-border-radius: 50%; /* or 50% */
+    border-radius: 50%; /* or 50% */
+
+    background-color: #e66b6b;
+    color: white !important;
+    text-align: center;
+
+}
+
+.prev-month,
+.next-month {
+  color: #cacaca;
+}
+/* Month header */
+
+/* Month list */
+.month-top ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.month-top ul li a{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.month-top ul li a:hover{
+    color: #000;
+}
+
+/* Previous button inside month header */
+.month-top .prev {
+    float: left;
+	    font-size: 30px;
+		color:#fff;
+    padding-top: 20px;
+}
+
+/* Next button */
+.month-top .next {
+    float: right;
+	    font-size: 30px;
+    padding-top: 20px;
+}
+
+.ring-left,
+.ring-right {
+  position: absolute;
+top: 177px;
+}
+
+.ring-left {
+  left: 2em;
+}
+
+.ring-right {
+  right: 2em;
+}
+
+.ring-left:before,
+.ring-left:after,
+.ring-right:before,
+.ring-right:after {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.2);
+  content: "";
+  display: inline-block;
+  margin: 8px;
+  height: 32px;
+  width: 8px;
+}

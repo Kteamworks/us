@@ -1,0 +1,60 @@
+<div class="modal-header">
+    <h3>Add prescription details!</h3>
+</div>
+<form name="form.userForm" ng-submit="submitForm()" novalidate>
+    <div class="modal-body">
+        <!-- NAME -->
+		        <div class="form-group">
+            <label>Dosage Type</label>
+			<select name="dosagetype" class="form-control" ng-model="dosagetype" required>
+			
+    <option value="1" selected="selected">Tablet</option>
+    <option value="2">Syrup</option>
+    <option value="3">Injection</option>
+  </select>
+    <p ng-show="form.userForm.dosagetype.$invalid && !form.userForm.dosagetype.$pristine" class="help-block">Dosage type is required.</p>
+        </div>
+        <div class="form-group">
+            <label>Quantity</label>
+            <input type="text" name="name" class="form-control" ng-model="name" required>
+            <p ng-show="form.userForm.name.$invalid && !form.userForm.name.$pristine" class="help-block">Quantity is required.</p>
+        </div>
+
+        <!-- USERNAME -->
+        <div class="form-group">
+            <label>Medicine Units</label>
+            <input type="text" name="username" class="form-control" ng-model="user.username" required>
+<p ng-show="form.userForm.username.$invalid && !form.userForm.username.$pristine" class="help-block">Medicine Units is required.</p>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-group">
+            <label>Take</label>
+			<select name="take1" ng-model="take1"  style="width:45px" ng-required="false">
+  <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+ </select>
+ <select name="take2" style="width:45px" ng-model="take2"  ng-required="false">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+ </select>
+ <select name="take3" style="width:45px" ng-model="take3"  ng-required="false">
+   <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+ </select> 
+         <input name="email" class="form-control" ng-model="email" type="hidden" ng-required="false">
+           <p ng-show="form.userForm.email.$invalid && !form.userForm.email.$pristine" class="help-block">Take is required.</p> 
+        </div>
+		<div class="form-group">
+            <label>Notes</label>
+	<textarea name="note" class="form-control" wrap="virtual" ng-model="note" ng-required="false"></textarea>
+	</div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" ng-disabled="form.userForm.$invalid">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+</form>
